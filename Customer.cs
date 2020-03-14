@@ -21,7 +21,7 @@ namespace Barbershop
         }
         public void print()
         {
-            Console.WriteLine("----------------------");
+            Console.WriteLine("----------------------*");
             Console.WriteLine("Клиент№ " + id + ":");
             Console.WriteLine(name + "  " + Last_name);
             Console.WriteLine("----------------------");

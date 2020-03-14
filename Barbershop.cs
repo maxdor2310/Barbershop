@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//test_3
 namespace Barbershop
 {
     static class Barbershop
     {
-      public static  List<Customer> customers = new List<Customer>();
-      public static List<Service> services = new List<Service>();
+        public static List<Customer> customers = new List<Customer>();
+        public static List<Service> services = new List<Service>();
+        public static List<Employee> employees = new List<Employee>();
         public static int find_customer(Customer customer)
         {
             for (int i = 0; i < customers.Count; i++)
             {
                 if (customers[i].is_compare(customer))
-                    return i;                
+                    return i;
             }
             return -1;
         }
@@ -39,7 +39,7 @@ namespace Barbershop
         }
         public static bool add_customer(string name, string last_name)
         {
-          return add_customer(new Customer(name, last_name));
+            return add_customer(new Customer(name, last_name));
         }
         public static bool add_service(string name, int price)
         {
@@ -55,7 +55,7 @@ namespace Barbershop
         }
         public static void print()
         {
-            if(customers.Count == 0)
+            if (customers.Count == 0)
             {
                 Console.WriteLine("Клиентов пока нет :(");
             }
@@ -80,5 +80,26 @@ namespace Barbershop
                 }
             }
         }
-    }    
+        public static int find_employee(Employee employee)
+        {
+            for (int i = 0; i < employees.Count; i++)
+            {
+                if (employees[i].is_compare(employee))
+                    return i;
+            }
+            return -1;
+        }
+        public static bool add_employee(Employee employee)
+        {
+            int employee_index = find_employee(employee);
+            if (employee_index != -1)
+                return false;
+            employees.Add(employee);
+            return true;
+        }
+        public static bool add_employee(string name, string last_name, string position)
+        {
+            return add_employee(new Employee(name, last_name,position));
+        }
+    }
 }
