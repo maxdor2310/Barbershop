@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//test_2
 namespace Barbershop
 {
     static class Barbershop
