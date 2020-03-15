@@ -20,6 +20,52 @@ namespace Barbershop
             Console.WriteLine("Вывести инфориацию о Барбершопе - введите print_all");
             Console.WriteLine("Выйти - введите qite");
         }
-    }
-    
+        public static void add_customer(string[] user_input_array)
+        {
+            if (user_input_array.Length < 3)
+            {    Console.WriteLine("для добавления клиента необходимо имя и фамилия!!!");
+                 return;
+            }
+            if (Barbershop.add_customer(user_input_array[1], user_input_array[2]))
+            {
+                Console.WriteLine("Клиент добавлен!");
+            }
+            else
+            {
+                Console.WriteLine("Клиент не был добавлен:(");
+            }
+        }
+        public static void add_service(string[] user_input_array)
+        {
+            if (user_input_array.Length < 3)
+            {
+                Console.WriteLine("для добавления услуги необходимо название и цена!!!");
+                return;
+            }
+            int price = 0;
+            try
+            {
+                price = Convert.ToInt32(user_input_array[2]);
+            }
+            catch(FormatException ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Цена должна быть целым положительным числом ");
+                return;
+            }
+            if(price < 0)
+            {
+                Console.WriteLine("Цена должна быьб целым положительным числом");
+                return;
+            }
+            if (Barbershop.add_service(user_input_array[1], price))
+            {
+                Console.WriteLine("Услуга успешно добавлена добавлен!");
+            }
+            else
+            {
+                Console.WriteLine("Услуга не была добавлен:(");
+            }
+        }
+    }    
 }
