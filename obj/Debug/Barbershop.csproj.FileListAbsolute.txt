@@ -1,2 +1,7 @@
 C:\Users\OOP11\source\repos\Barbershop\Barbershop\obj\Debug\Barbershop.csprojAssemblyReference.cache
 C:\Users\OOP11\source\repos\Barbershop\Barbershop\obj\Debug\Barbershop.csproj.CoreCompileInputs.cache
+C:\Users\OOP11\source\repos\Barbershop\Barbershop\bin\Debug\Barbershop.exe.config
+C:\Users\OOP11\source\repos\Barbershop\Barbershop\bin\Debug\Barbershop.exe
+C:\Users\OOP11\source\repos\Barbershop\Barbershop\bin\Debug\Barbershop.pdb
+C:\Users\OOP11\source\repos\Barbershop\Barbershop\obj\Debug\Barbershop.exe
+C:\Users\OOP11\source\repos\Barbershop\Barbershop\obj\Debug\Barbershop.pdb

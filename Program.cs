@@ -10,6 +10,36 @@ namespace Barbershop
     {
         static void Main(string[] args)
         {
+            print_menu();
+            string user_input = "";
+            while(user_input != "q")
+            {
+                Console.WriteLine("Введите команду");
+                user_input = Console.ReadLine();
+                string[] user_input_array = user_input.Split(' ');
+                if(user_input_array.Length == 0)
+                {
+                    Console.WriteLine("Пожалуйста, введиете команду");
+                    continue;
+                }
+                switch(user_input_array[0])
+                {
+                    case "add_customer":
+                        add_customer(user_input_array);
+                        break;
+                    case "add_service":
+                        add_service(user_input_array);
+                        break;
+                    case "print_all":
+                        Barbershop.print();
+                        break;
+                    case "q":
+                        break;
+                    default:
+                        Console.WriteLine("Некоректный ввод");
+                        break;                    
+                }
+            }
         }
         public static void print_menu()
         {
@@ -18,7 +48,7 @@ namespace Barbershop
             Console.WriteLine("Добавить клиента - введите add_customer name last_name");
             Console.WriteLine("Добавить услгу - введите add_service name price");
             Console.WriteLine("Вывести инфориацию о Барбершопе - введите print_all");
-            Console.WriteLine("Выйти - введите qite");
+            Console.WriteLine("Выйти - введите q");
         }
         public static void add_customer(string[] user_input_array)
         {
