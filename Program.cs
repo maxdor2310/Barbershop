@@ -33,6 +33,9 @@ namespace Barbershop
                     case "print_all":
                         Barbershop.print();
                         break;
+                    case "add_employee":
+                        add_employee(user_input_array);
+                        break;
                     case "q":
                         break;
                     default:
@@ -47,6 +50,7 @@ namespace Barbershop
             Console.WriteLine("Есть такие функции:");
             Console.WriteLine("Добавить клиента - введите add_customer name last_name");
             Console.WriteLine("Добавить услгу - введите add_service name price");
+            Console.WriteLine("Добавить услгу - введите add_employee name last_name position");
             Console.WriteLine("Вывести инфориацию о Барбершопе - введите print_all");
             Console.WriteLine("Выйти - введите q");
         }
@@ -63,6 +67,22 @@ namespace Barbershop
             else
             {
                 Console.WriteLine("Клиент не был добавлен:(");
+            }
+        }
+        public static void add_employee(string[] user_input_array)
+        {
+            if (user_input_array.Length < 4)
+            {
+                Console.WriteLine("для добавления работника необходимо имя,фамилия и должность!!!");
+                return;
+            }
+            if (Barbershop.add_employee(user_input_array[1], user_input_array[2], user_input_array[3]))
+            {
+                Console.WriteLine("Работник добавлен!");
+            }
+            else
+            {
+                Console.WriteLine("Работник не был добавлен:(");
             }
         }
         public static void add_service(string[] user_input_array)

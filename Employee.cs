@@ -21,6 +21,13 @@ namespace Barbershop
             this.Last_name = last_name;
             this.position = position;
         }
+        public void print()
+        {
+            Console.WriteLine("----------------------*");
+            Console.WriteLine("Работник№ " + id + ":");
+            Console.WriteLine(name + "  " + Last_name + "  " + position);
+            Console.WriteLine("----------------------");
+        }
         public bool is_compare(Employee employee)
         {
             if (id == employee.id && name == employee.name && Last_name == employee.Last_name)

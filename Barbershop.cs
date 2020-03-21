@@ -79,6 +79,18 @@ namespace Barbershop
                     services[i].print();
                 }
             }
+            if (employees.Count == 0)
+            {
+                Console.WriteLine("Работников пока нет :(");
+            }
+            else
+            {
+                Console.WriteLine("Работники: ");
+                for (int i = 0; i < employees.Count; i++)
+                {
+                    employees[i].print();
+                }
+            }
         }
         public static int find_employee(Employee employee)
         {

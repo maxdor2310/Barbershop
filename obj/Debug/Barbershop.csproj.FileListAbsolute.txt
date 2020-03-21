@@ -5,3 +5,9 @@ C:\Users\OOP11\source\repos\Barbershop\Barbershop\bin\Debug\Barbershop.exe
 C:\Users\OOP11\source\repos\Barbershop\Barbershop\bin\Debug\Barbershop.pdb
 C:\Users\OOP11\source\repos\Barbershop\Barbershop\obj\Debug\Barbershop.exe
 C:\Users\OOP11\source\repos\Barbershop\Barbershop\obj\Debug\Barbershop.pdb
+C:\Users\MaxDor\00\Barbershop\Barbershop\bin\Debug\Barbershop.exe.config
+C:\Users\MaxDor\00\Barbershop\Barbershop\bin\Debug\Barbershop.exe
+C:\Users\MaxDor\00\Barbershop\Barbershop\bin\Debug\Barbershop.pdb
+C:\Users\MaxDor\00\Barbershop\Barbershop\obj\Debug\Barbershop.csprojAssemblyReference.cache
+C:\Users\MaxDor\00\Barbershop\Barbershop\obj\Debug\Barbershop.exe
+C:\Users\MaxDor\00\Barbershop\Barbershop\obj\Debug\Barbershop.pdb
